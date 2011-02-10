@@ -4,9 +4,25 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+<Button 
+	android:id="@+id/btn_take_picture"
+	android:text="Take Picture"
+	android:textSize="35sp"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:padding="50dp">
+</Button>
+<Button 
+	android:id="@+id/btn_get_location"
+	android:text="Get Location"
+	android:textSize="35sp"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:padding="50dp">
+</Button>
+<ImageView 
+	android:id="@+id/iv_photo_result" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</ImageView>
 </LinearLayout>
