@@ -159,6 +159,52 @@ public class DogShitMap extends Activity
 	}
 
 
+	private void SavePicture()
+	{
+		// // Write the file to storage
+		// java.util.UUID uid=java.util.UUID.randomUUID();
+		// android.content.Context c=getContext();
+		//
+		// try
+		// {
+		// boolean mExternalStorageAvailable=false;
+		// boolean mExternalStorageWriteable=false;
+		// String state=Environment.getExternalStorageState();
+		//
+		// if (Environment.MEDIA_MOUNTED.equals(state))
+		// {
+		// // We can read and write the media
+		// mExternalStorageAvailable=mExternalStorageWriteable=true;
+		//
+		// Log.i("P_PC_WRITE.FILE", "Begin write file");
+		// File ff=new File(Environment.getExternalStorageDirectory(),
+		// "test"+uid.toString()+".jpg");
+		//
+		// OutputStream os=new FileOutputStream(ff);
+		//
+		// os.write(_data);
+		// os.close();
+		// }
+		// else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state))
+		// {
+		// // We can only read the media
+		// mExternalStorageAvailable=true;
+		// mExternalStorageWriteable=false;
+		// }
+		// else
+		// {
+		// // Something else is wrong. It may be one of many other states, but all we need
+		// // to know is we can neither read nor write
+		// mExternalStorageAvailable=mExternalStorageWriteable=false;
+		// }
+		// }
+		// catch (Exception ex)
+		// {
+		// // TODO: Error handling
+		// }
+	}
+
+
 	private Location getLocation()
 	{
 		Location location;
