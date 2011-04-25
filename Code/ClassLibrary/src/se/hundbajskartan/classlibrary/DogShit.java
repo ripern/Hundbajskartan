@@ -1,4 +1,4 @@
-package se.hundbajskartan.classLibrary;
+package se.hundbajskartan.classlibrary;
 
 import java.util.Date;
 

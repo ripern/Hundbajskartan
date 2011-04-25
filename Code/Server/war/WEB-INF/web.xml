@@ -8,9 +8,17 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>DogShitMapServer</servlet-name>
 		<servlet-class>se.hundbajskartan.server.DogShitMapServerServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>NewDogShit</servlet-name>
+		<servlet-class>se.hundbajskartan.server.NewDogShit</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>DogShitMapServer</servlet-name>
 		<url-pattern>/dogshitmapserver</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewDogShit</servlet-name>
+		<url-pattern>/newdogshit</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
