@@ -3,6 +3,7 @@
 	<name>DogShitMapServer</name>
 	<comment></comment>
 	<projects>
+		<project>DogShitClassLibrary</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

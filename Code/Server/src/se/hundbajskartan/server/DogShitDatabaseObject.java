@@ -10,23 +10,23 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
-public class DogShit {
+public class DogShitDatabaseObject {
 	@PrimaryKey
     @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
     private Key key;
 
     @Persistent
-    private User author;
-
+    private Double longitude;
+    
     @Persistent
-    private String content;
+    private Double latitude;
 
     @Persistent
     private Date date;
 
-    public DogShit(User author, String content, Date date) {
-        this.author = author;
-        this.content = content;
+    public DogShitDatabaseObject(Double longitude, Double latitude, Date date) {
+        this.longitude = longitude;
+        this.latitude = latitude;
         this.date = date;
     }
 
@@ -34,24 +34,24 @@ public class DogShit {
         return key;
     }
 
-    public User getAuthor() {
-        return author;
+    public Double getLongitude() {
+        return longitude;
     }
 
-    public String getContent() {
-        return content;
+    public Double getLatitude() {
+        return latitude;
     }
 
     public Date getDate() {
         return date;
     }
 
-    public void setAuthor(User author) {
-        this.author = author;
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
     }
 
     public void setDate(Date date) {

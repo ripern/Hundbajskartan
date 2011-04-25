@@ -12,7 +12,7 @@ import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 import com.google.gson.Gson;
 
-import se.hundbajskartan.server.DogShit;
+import se.hundbajskartan.server.DogShitDatabaseObject;
 import se.hundbajskartan.server.PMF;
 
 @SuppressWarnings("serial")
@@ -23,15 +23,17 @@ public class DogShitMapServerServlet extends HttpServlet {
 			throws IOException {
 		resp.setContentType("application/json");
 
+		//addDogShit();		
+		
 		//ToDo hämta alla hundbajsar
 		PersistenceManager pm = PMF.get().getPersistenceManager();
-	    String query = "select from " + DogShit.class.getName();
-	    List<DogShit> dogShits = (List<DogShit>) pm.newQuery(query).execute();
-	    pm.close();
+	    String query = "select from " + DogShitDatabaseObject.class.getName();
+	    List<DogShitDatabaseObject> dogShits = (List<DogShitDatabaseObject>) pm.newQuery(query).execute();
 	    
 	    //ToDo serialisera och skicka i JSON
 	    Gson gson = new Gson();
 	    resp.getWriter().println(gson.toJson(dogShits));
+	    pm.close();
 	}
 	
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -51,12 +53,28 @@ public class DogShitMapServerServlet extends HttpServlet {
         
         //ToDo avserialisera JSON
         Gson gson = new Gson();
-        DogShit dogShit = gson.fromJson(data, DogShit.class);
+        DogShitDatabaseObject dogShit = gson.fromJson(data, DogShitDatabaseObject.class);
         
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		try {
 			pm.makePersistent(dogShit);
 		} finally {
+			pm.close();
+		}
+	}
+	
+	private void addDogShit()
+	{
+        
+        DogShitDatabaseObject dogShit = new DogShitDatabaseObject(0.0, 0.0, new Date());
+        
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		try 
+		{
+			pm.makePersistent(dogShit);
+		} 
+		finally 
+		{
 			pm.close();
 		}
 	}
