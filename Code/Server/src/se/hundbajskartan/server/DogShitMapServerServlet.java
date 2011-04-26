@@ -2,9 +2,13 @@ package se.hundbajskartan.server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.jdo.PersistenceManager;
@@ -15,6 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
+import com.google.appengine.repackaged.org.json.JSONException;
+import com.google.appengine.repackaged.org.json.JSONObject;
 import com.google.gson.Gson;
 
 @SuppressWarnings("serial")
@@ -67,7 +73,27 @@ public class DogShitMapServerServlet extends HttpServlet {
 		// TODO: Servern lyckas inte deserialisera korrekt!!!
 		// com.google.gson.JsonSyntaxException: Mon Apr 25 22:48:04 GMT+02:00
 		// 2011
-		DogShit ds = gson.fromJson(data, DogShit.class);
+		// DogShit ds = gson.fromJson(data, DogShit.class);
+        DogShit ds = new DogShit();
+		JSONObject jsonObject;
+		try {
+			jsonObject = new JSONObject(data);
+
+			DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+			ds.setLongitude(jsonObject.getDouble("longitude"));
+			ds.setLatitude(jsonObject.getDouble("latitude"));
+			ds.setDate(formatter.parse(jsonObject.get("date").toString()));
+		} catch (JSONException e) {
+			e.printStackTrace();
+			log.log(Level.WARNING,
+					"JSON deserialize problem" + e.getStackTrace());
+			// Log.debug(TAG, "JSON deserialize problem" + e.getStackTrace());
+		} catch (ParseException e) {
+			e.printStackTrace();
+			log.log(Level.WARNING,
+					"JSON parse/deserialize problem" + e.getStackTrace());
+		}
+
 		// Create DogShit object with key (DogShitDatabaseObject)
 		DogShitDatabaseObject dsdo = new DogShitDatabaseObject(
 				ds.getLongitude(), ds.getLatitude(), ds.getDate());
