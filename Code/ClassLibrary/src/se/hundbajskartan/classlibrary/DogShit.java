@@ -10,6 +10,8 @@ public class DogShit {
 
     private Date date;
 
+	public DogShit() {
+	}
     public DogShit(Double longitude, Double latitude, Date date) {
         this.longitude = longitude;
         this.latitude = latitude;

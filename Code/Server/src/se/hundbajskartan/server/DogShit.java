@@ -4,40 +4,39 @@ import java.util.Date;
 
 public class DogShit {
 
-    private Double longitude;
-    
-    private Double latitude;
+	private Double longitude;
 
-    private Date date;
+	private Double latitude;
 
-    public DogShit(Double longitude, Double latitude, Date date) {
-        this.longitude = longitude;
-        this.latitude = latitude;
-        this.date = date;
-    }
+	private Date date;
 
-    public Double getLongitude() {
-        return longitude;
-    }
+	public DogShit(Double longitude, Double latitude, Date date) {
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.date = date;
+	}
 
-    public Double getLatitude() {
-        return latitude;
-    }
+	public Double getLongitude() {
+		return longitude;
+	}
 
-    public Date getDate() {
-        return date;
-    }
+	public Double getLatitude() {
+		return latitude;
+	}
 
-    public void setLongitude(Double longitude) {
-        this.longitude = longitude;
-    }
+	public Date getDate() {
+		return date;
+	}
 
-    public void setLatitude(Double latitude) {
-        this.latitude = latitude;
-    }
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 }
-

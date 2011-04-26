@@ -66,6 +66,9 @@ public class DogShitMapServerServlet extends HttpServlet {
 
 		Gson gson = new Gson();
 		// Deserialize
+		// TODO: Servern lyckas inte deserialisera korrekt!!!
+		// com.google.gson.JsonSyntaxException: Mon Apr 25 22:48:04 GMT+02:00
+		// 2011
 		DogShit ds = gson.fromJson(data, DogShit.class);
 		// Create DogShit object with key (DogShitDatabaseObject)
 		DogShitDatabaseObject dsdo = new DogShitDatabaseObject(ds
