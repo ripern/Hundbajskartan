@@ -3,3 +3,6 @@
 .settings
 bin
 gen
+.class
+Code/Server/war/WEB-INF/appengine-generated
+Code/Server/war/WEB-INF/classes
