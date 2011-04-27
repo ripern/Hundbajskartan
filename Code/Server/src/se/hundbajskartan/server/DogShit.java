@@ -16,6 +16,9 @@ public class DogShit {
 		this.date = date;
 	}
 
+	public DogShit() {
+	}
+
 	public Double getLongitude() {
 		return longitude;
 	}

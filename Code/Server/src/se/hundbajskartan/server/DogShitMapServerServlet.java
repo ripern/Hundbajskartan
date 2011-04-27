@@ -3,8 +3,8 @@ package se.hundbajskartan.server;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -81,19 +81,18 @@ public class DogShitMapServerServlet extends HttpServlet {
 		try {
 			jsonObject = new JSONObject(data);
 
-			DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+			DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 			ds.setLongitude(jsonObject.getDouble("longitude"));
 			ds.setLatitude(jsonObject.getDouble("latitude"));
-			ds.setDate(formatter.parse(jsonObject.get("date").toString()));
+			long timeInMs = jsonObject.getLong("date");
+			Calendar calendar = Calendar.getInstance();
+			calendar.setTimeInMillis(timeInMs);
+			ds.setDate(calendar.getTime());
 		} catch (JSONException e) {
 			e.printStackTrace();
 			log.log(Level.WARNING,
 					"JSON deserialize problem" + e.getStackTrace());
 			// Log.debug(TAG, "JSON deserialize problem" + e.getStackTrace());
-		} catch (ParseException e) {
-			e.printStackTrace();
-			log.log(Level.WARNING,
-					"JSON parse/deserialize problem" + e.getStackTrace());
 		}
 
 		// Create DogShit object with key (DogShitDatabaseObject)
