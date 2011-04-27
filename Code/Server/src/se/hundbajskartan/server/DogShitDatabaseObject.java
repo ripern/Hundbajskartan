@@ -1,60 +1,60 @@
 package se.hundbajskartan.server;
 
-import com.google.appengine.api.datastore.Key;
-import com.google.appengine.api.users.User;
-
 import java.util.Date;
+
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+import com.google.appengine.api.datastore.Key;
+
 @PersistenceCapable
 public class DogShitDatabaseObject {
 	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Key key;
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Key key;
 
-    @Persistent
-    private Double longitude;
-    
-    @Persistent
-    private Double latitude;
+	@Persistent
+	private Double longitude;
 
-    @Persistent
-    private Date date;
+	@Persistent
+	private Double latitude;
 
-    public DogShitDatabaseObject(Double longitude, Double latitude, Date date) {
-        this.longitude = longitude;
-        this.latitude = latitude;
-        this.date = date;
-    }
+	@Persistent
+	private Date date;
 
-    public Key getKey() {
-        return key;
-    }
+	public DogShitDatabaseObject(Double longitude, Double latitude, Date date) {
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.date = date;
+	}
 
-    public Double getLongitude() {
-        return longitude;
-    }
+	public Key getKey() {
+		return key;
+	}
 
-    public Double getLatitude() {
-        return latitude;
-    }
+	public Double getLongitude() {
+		return longitude;
+	}
 
-    public Date getDate() {
-        return date;
-    }
+	public Double getLatitude() {
+		return latitude;
+	}
 
-    public void setLongitude(Double longitude) {
-        this.longitude = longitude;
-    }
+	public Date getDate() {
+		return date;
+	}
 
-    public void setLatitude(Double latitude) {
-        this.latitude = latitude;
-    }
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 }
