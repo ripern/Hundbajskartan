@@ -5,24 +5,38 @@
     android:layout_height="fill_parent"
     >
 <Button 
-	android:id="@+id/btn_take_picture"
-	android:text="Take Picture"
-	android:textSize="35sp"
-	android:layout_width="fill_parent" 
-	android:layout_height="wrap_content"
-	android:padding="50dp">
-</Button>
-<Button 
 	android:id="@+id/btn_get_location"
-	android:text="Get Location"
+	android:text="Tag Dog Shit"
 	android:textSize="35sp"  
 	android:layout_width="fill_parent" 
 	android:layout_height="wrap_content"
-	android:padding="50dp">
+	android:padding="50dp"
+	android:onClick="getLocationClick">
 </Button>
-<ImageView 
-	android:id="@+id/iv_photo_result" 
+<TextView 
+	android:text=" Position: " 
+	android:id="@+id/tv_result" 
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content">
-</ImageView>
+</TextView>
+<TextView 
+	android:text="" 
+	android:id="@+id/tv_result_value" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</TextView>
+<TextView 
+	android:text="" 
+	android:id="@+id/tv_gps_status" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</TextView>
+<com.google.android.maps.MapView
+				 android:id="@+id/map_view"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:enabled="true"
+                 android:apiKey="07vDn2-rA41yGZZSNmCzGX50SJVomUgIiZ6qFPA"
+                 android:clickable="true"
+                 />
 </LinearLayout>
