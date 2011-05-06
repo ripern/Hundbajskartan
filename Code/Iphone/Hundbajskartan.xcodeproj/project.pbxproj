@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C29ECF1113743C7A0025C69F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29ECF1013743C7A0025C69F /* UIKit.framework */; };
+		C29ECF1313743C7A0025C69F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29ECF1213743C7A0025C69F /* Foundation.framework */; };
+		C29ECF1513743C7A0025C69F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29ECF1413743C7A0025C69F /* CoreGraphics.framework */; };
+		C29ECF1B13743C7A0025C69F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C29ECF1913743C7A0025C69F /* InfoPlist.strings */; };
+		C29ECF1E13743C7A0025C69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C29ECF1D13743C7A0025C69F /* main.m */; };
+		C29ECF2113743C7A0025C69F /* HundbajskartanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C29ECF2013743C7A0025C69F /* HundbajskartanAppDelegate.m */; };
+		C29ECF2413743C7A0025C69F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29ECF2213743C7A0025C69F /* MainWindow.xib */; };
+		C29ECF2713743C7A0025C69F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29ECF2613743C7A0025C69F /* RootViewController.m */; };
+		C29ECF2A13743C7A0025C69F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29ECF2813743C7A0025C69F /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C29ECF0C13743C7A0025C69F /* Hundbajskartan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hundbajskartan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29ECF1013743C7A0025C69F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C29ECF1213743C7A0025C69F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C29ECF1413743C7A0025C69F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C29ECF1813743C7A0025C69F /* Hundbajskartan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hundbajskartan-Info.plist"; sourceTree = "<group>"; };
+		C29ECF1A13743C7A0025C69F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C29ECF1C13743C7A0025C69F /* Hundbajskartan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hundbajskartan-Prefix.pch"; sourceTree = "<group>"; };
+		C29ECF1D13743C7A0025C69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C29ECF1F13743C7A0025C69F /* HundbajskartanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HundbajskartanAppDelegate.h; sourceTree = "<group>"; };
+		C29ECF2013743C7A0025C69F /* HundbajskartanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HundbajskartanAppDelegate.m; sourceTree = "<group>"; };
+		C29ECF2313743C7A0025C69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C29ECF2513743C7A0025C69F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C29ECF2613743C7A0025C69F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C29ECF2913743C7A0025C69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C29ECF0913743C7A0025C69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29ECF1113743C7A0025C69F /* UIKit.framework in Frameworks */,
+				C29ECF1313743C7A0025C69F /* Foundation.framework in Frameworks */,
+				C29ECF1513743C7A0025C69F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C29ECF0113743C7A0025C69F = {
+			isa = PBXGroup;
+			children = (
+				C29ECF1613743C7A0025C69F /* Hundbajskartan */,
+				C29ECF0F13743C7A0025C69F /* Frameworks */,
+				C29ECF0D13743C7A0025C69F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C29ECF0D13743C7A0025C69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29ECF0C13743C7A0025C69F /* Hundbajskartan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29ECF0F13743C7A0025C69F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29ECF1013743C7A0025C69F /* UIKit.framework */,
+				C29ECF1213743C7A0025C69F /* Foundation.framework */,
+				C29ECF1413743C7A0025C69F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C29ECF1613743C7A0025C69F /* Hundbajskartan */ = {
+			isa = PBXGroup;
+			children = (
+				C29ECF1F13743C7A0025C69F /* HundbajskartanAppDelegate.h */,
+				C29ECF2013743C7A0025C69F /* HundbajskartanAppDelegate.m */,
+				C29ECF2213743C7A0025C69F /* MainWindow.xib */,
+				C29ECF2513743C7A0025C69F /* RootViewController.h */,
+				C29ECF2613743C7A0025C69F /* RootViewController.m */,
+				C29ECF2813743C7A0025C69F /* RootViewController.xib */,
+				C29ECF1713743C7A0025C69F /* Supporting Files */,
+			);
+			path = Hundbajskartan;
+			sourceTree = "<group>";
+		};
+		C29ECF1713743C7A0025C69F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C29ECF1813743C7A0025C69F /* Hundbajskartan-Info.plist */,
+				C29ECF1913743C7A0025C69F /* InfoPlist.strings */,
+				C29ECF1C13743C7A0025C69F /* Hundbajskartan-Prefix.pch */,
+				C29ECF1D13743C7A0025C69F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C29ECF0B13743C7A0025C69F /* Hundbajskartan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29ECF2D13743C7A0025C69F /* Build configuration list for PBXNativeTarget "Hundbajskartan" */;
+			buildPhases = (
+				C29ECF0813743C7A0025C69F /* Sources */,
+				C29ECF0913743C7A0025C69F /* Frameworks */,
+				C29ECF0A13743C7A0025C69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hundbajskartan;
+			productName = Hundbajskartan;
+			productReference = C29ECF0C13743C7A0025C69F /* Hundbajskartan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C29ECF0313743C7A0025C69F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C29ECF0613743C7A0025C69F /* Build configuration list for PBXProject "Hundbajskartan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C29ECF0113743C7A0025C69F;
+			productRefGroup = C29ECF0D13743C7A0025C69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C29ECF0B13743C7A0025C69F /* Hundbajskartan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C29ECF0A13743C7A0025C69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29ECF1B13743C7A0025C69F /* InfoPlist.strings in Resources */,
+				C29ECF2413743C7A0025C69F /* MainWindow.xib in Resources */,
+				C29ECF2A13743C7A0025C69F /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29ECF0813743C7A0025C69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29ECF1E13743C7A0025C69F /* main.m in Sources */,
+				C29ECF2113743C7A0025C69F /* HundbajskartanAppDelegate.m in Sources */,
+				C29ECF2713743C7A0025C69F /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C29ECF1913743C7A0025C69F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29ECF1A13743C7A0025C69F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C29ECF2213743C7A0025C69F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29ECF2313743C7A0025C69F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C29ECF2813743C7A0025C69F /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29ECF2913743C7A0025C69F /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C29ECF2B13743C7A0025C69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C29ECF2C13743C7A0025C69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C29ECF2E13743C7A0025C69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hundbajskartan/Hundbajskartan-Prefix.pch";
+				INFOPLIST_FILE = "Hundbajskartan/Hundbajskartan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C29ECF2F13743C7A0025C69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hundbajskartan/Hundbajskartan-Prefix.pch";
+				INFOPLIST_FILE = "Hundbajskartan/Hundbajskartan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C29ECF0613743C7A0025C69F /* Build configuration list for PBXProject "Hundbajskartan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29ECF2B13743C7A0025C69F /* Debug */,
+				C29ECF2C13743C7A0025C69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29ECF2D13743C7A0025C69F /* Build configuration list for PBXNativeTarget "Hundbajskartan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29ECF2E13743C7A0025C69F /* Debug */,
+				C29ECF2F13743C7A0025C69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C29ECF0313743C7A0025C69F /* Project object */;
+}
