@@ -2,4 +2,6 @@
 <resources>
     <string name="hello">Hello World, DogShitMap!</string>
     <string name="app_name">DogShitMap</string>
+    <string name="waiting_for_location">Waiting for location</string>
+    <string name="uploading_shit">Uploading dog shit</string>
 </resources>
